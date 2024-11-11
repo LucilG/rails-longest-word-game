@@ -1,0 +1,23 @@
+<header>
+  <h1>Longest Word Game !</h1>
+</header>
+
+<div class="container">
+  <div class="sub-container">
+    <p>Here is your grid:</p>
+    <ul>
+      <% @letters.split.each do |letter| %>
+        <li class="letter"><%= letter.upcase %></li>
+      <% end %>
+    </ul>
+  </div>
+
+  <div class="sub-container">
+    <p>Here is your result:</p>
+    <p><%=@message%></p>
+  </div>
+</div>
+
+<footer>
+  <p><%= link_to "Let's play again ?", '/new', id:"btn-play-again" %></p>
+</footer>
